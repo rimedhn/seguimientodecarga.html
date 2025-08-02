@@ -1,4 +1,4 @@
-const SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/1AbCDeFgHIJKlmNOPQrstuvWxyz1234567890/export?format=csv";
+const SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vT2NZX6l8bAhCvsjPDuePigHCn9AHdNfB-kEutAd71VHhXmp_QdteAe75f8aWS_kENkn50QvymDysHV/pub?gid=1157701279&single=true&output=csv";
 
 function csvToJson(csv) {
     const lines = csv.trim().split('\n');
