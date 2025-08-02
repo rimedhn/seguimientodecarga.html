@@ -1,14 +1,9 @@
 body {
     background-color: #f7f7f7;
+    padding-bottom: 60px; /* El alto del footer, ajusta si el footer es más alto */
 }
 .card {
     border-radius: 14px;
-}
-footer {
-    position: fixed;
-    width: 100%;
-    left: 0;
-    bottom: 0;
 }
 .logo {
     height: 48px;
@@ -19,17 +14,37 @@ footer {
     padding: 3px;
     margin-right: 12px;
 }
-@media (max-width: 768px) {
-    footer {
-        position: relative;
-    }
-    .logo {
-        height: 36px;
-    }
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #0d6efd;
+    color: #fff;
+    text-align: center;
+    padding: 8px 0;
+    z-index: 100;
+    font-size: 1rem;
 }
 
+/* Para que la lista de productos se vea bien */
 .detalles-lista {
     max-height: 300px;
     overflow-y: auto;
     padding-left: 20px;
+}
+
+/* Responsive para logo y footer */
+@media (max-width: 768px) {
+    .logo {
+        height: 36px;
+    }
+    footer {
+        font-size: 0.9rem;
+        padding: 6px 0;
+    }
+    body {
+        padding-bottom: 52px; /* Ajusta si el footer es más pequeño en móviles */
+    }
 }
