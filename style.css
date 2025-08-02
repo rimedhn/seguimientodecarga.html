@@ -15,6 +15,13 @@ body {
     margin-right: 12px;
 }
 
+
+/* Responsive para logo y footer */
+@media (max-width: 768px) {
+    .logo {
+        height: 36px;
+    }
+
 /* Footer fijo abajo */
 footer {
     position: fixed;
