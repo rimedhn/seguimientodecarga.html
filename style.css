@@ -1,0 +1,29 @@
+body {
+    background-color: #f7f7f7;
+}
+.card {
+    border-radius: 14px;
+}
+footer {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+.logo {
+    height: 48px;
+    width: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    background: #fff;
+    padding: 3px;
+    margin-right: 12px;
+}
+@media (max-width: 768px) {
+    footer {
+        position: relative;
+    }
+    .logo {
+        height: 36px;
+    }
+}
