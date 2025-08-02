@@ -16,8 +16,7 @@ body {
 }
 
 
-/* Responsive para logo y footer */
-@media (max-width: 768px) {
+    
     .logo {
         height: 36px;
     }
