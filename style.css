@@ -1,0 +1,78 @@
+body {
+    background-color: #f7f7f7;
+    padding-bottom: 60px;
+}
+.card {
+    border-radius: 14px;
+}
+.logo {
+    height: 48px;
+    width: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    background: #fff;
+    padding: 3px;
+    margin-right: 12px;
+}
+
+/* Footer fijo abajo */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #0d6efd;
+    color: #fff;
+    text-align: center;
+    padding: 8px 0;
+    z-index: 100;
+    font-size: 1rem;
+}
+
+/* Tarjetas de resultados: igual altura y scroll en productos */
+.datos-card,
+.productos-card {
+    min-height: 340px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.productos-card .card-body {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    padding-bottom: 68px; /* Para no ser tapado por el footer */
+}
+
+.detalles-lista {
+    flex: 1 1 auto;
+    max-height: 220px;
+    overflow-y: auto;
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+/* Responsive para logo y footer */
+@media (max-width: 768px) {
+    .logo {
+        height: 36px;
+    }
+    footer {
+        font-size: 0.9rem;
+        padding: 6px 0;
+    }
+    body {
+        padding-bottom: 52px;
+    }
+    .datos-card,
+    .productos-card {
+        min-height: 280px;
+    }
+    .productos-card .card-body {
+        padding-bottom: 60px;
+    }
+}
