@@ -1,10 +1,12 @@
 body {
     background-color: #f7f7f7;
-    padding-bottom: 60px; /* El alto del footer, ajusta si el footer es más alto */
+    padding-bottom: 60px; /* deja espacio para el footer */
 }
 .card {
     border-radius: 14px;
 }
+
+/* El logo y responsive: igual que antes */
 .logo {
     height: 48px;
     width: auto;
@@ -15,6 +17,7 @@ body {
     margin-right: 12px;
 }
 
+/* Footer fijo abajo */
 footer {
     position: fixed;
     left: 0;
@@ -28,7 +31,12 @@ footer {
     font-size: 1rem;
 }
 
-/* Para que la lista de productos se vea bien */
+/* La card-body nunca queda tapada por el footer */
+.card-body {
+    padding-bottom: 68px; /* igual o mayor al alto del footer + margen */
+}
+
+/* La lista de productos se ve bien y con scroll si es muy larga */
 .detalles-lista {
     max-height: 300px;
     overflow-y: auto;
@@ -43,9 +51,11 @@ footer {
     footer {
         font-size: 0.9rem;
         padding: 6px 0;
-        margin-top: 20px;
     }
     body {
-        padding-bottom: 52px; /* Ajusta si el footer es más pequeño en móviles */
+        padding-bottom: 52px;
+    }
+    .card-body {
+        padding-bottom: 60px;
     }
 }
