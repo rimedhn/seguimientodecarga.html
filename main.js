@@ -37,7 +37,7 @@ document.getElementById('trackingForm').addEventListener('submit', function(e) {
                         <p><strong>Origen:</strong> ${envio['Origen']}</p>
                         <p><strong>Destino:</strong> ${envio['Destino']}</p>
                         <p><strong>Estado:</strong> <span class="badge bg-info">${envio['Estado']}</span></p>
-                        <p><strong>Fecha Estimada de Entrega:</strong> ${envio['Fecha Entrega']}</p>
+                        <p><strong>Fecha de recibido:</strong> ${envio['Fecha Entrega']}</p>
                         <p><strong>Productos en la carga:</strong></p>
                         <ul class="mb-3 detalles-lista">
                             ${detallesToList(envio['Detalles'])}
