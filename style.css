@@ -2,9 +2,11 @@ body {
     background-color: #f7f7f7;
     padding-bottom: 60px;
 }
+
 .card {
     border-radius: 14px;
 }
+
 .logo {
     height: 48px;
     width: auto;
@@ -13,6 +15,7 @@ body {
     background: #fff;
     padding: 3px;
     margin-right: 12px;
+    display: inline-block;
 }
 
 /* Footer fijo abajo */
@@ -26,7 +29,7 @@ footer {
     text-align: center;
     padding: 8px 0;
     z-index: 100;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 /* Tarjetas de resultados: igual altura y scroll en productos */
@@ -56,23 +59,41 @@ footer {
     margin-bottom: 0;
 }
 
-/* Responsive para logo y footer */
+/* Responsive para móvil */
 @media (max-width: 768px) {
-    .logo {
-        height: 36px;
+        .logo {
+        height: 300px;
+        margin-right: 0;
+        display: block;
+        margin-left: 11%;
+        margin-right: auto;
+        text-align: center;
+        }
+    .navbar-brand {
+        display: block;
+        display: none;
     }
+    
     footer {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
         padding: 6px 0;
     }
+    
     body {
-        padding-bottom: 52px;
+        padding-bottom: 150px; /* Alto real del footer en móvil */
     }
+    
     .datos-card,
     .productos-card {
-        min-height: 280px;
+        min-height: 260px;
     }
+    
     .productos-card .card-body {
-        padding-bottom: 60px;
+        padding-bottom: 50px; /* Más espacio para el footer */
+        margin-bottom: 0px; /* Más espacio para el footer */
+    }
+    
+    .detalles-lista {
+        max-height: 290px; /* Menor alto para scroll interno */
     }
 }
